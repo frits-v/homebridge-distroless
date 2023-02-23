@@ -1,6 +1,6 @@
 FROM node:lts-alpine as build
 WORKDIR /build
-RUN npm install homebridge homebridge-hue
+RUN npm install homebridge homebridge-adguardhome homebridge-august homebridge-hue homebridge-nest
 
 FROM gcr.io/distroless/nodejs:18-amd64
 WORKDIR /home/nonroot
